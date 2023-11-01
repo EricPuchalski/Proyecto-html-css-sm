@@ -1,0 +1,358 @@
+:root {
+  --font-family-primary: "Roboto", "sans-serif";
+  --font-size-primary: 1.2em;
+}
+* {
+  font-family: var(--font-family-primary);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b71234;
+  position:sticky;
+}
+.header__container__img{
+    display: flex;
+}
+.container__img-silicon {
+  width: 140px;
+  margin: 0 20px 0 20px;
+}
+.header__nav {
+  width: 600px;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: var(--font-size-primary);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.877);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background-color: #ca173bc5;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(1.01);
+}
+
+.utn, .silicon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.utn__container{
+  background-image: url(../imgs/utn.png);
+}
+
+.silicon__container{
+  background-image: url(../imgs/silicon-establecimiento.jpg);
+}
+.utn__container, .silicon__container{
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.silion__title, .utn__title{
+    margin: 0;
+    font-size: 4em;
+    color: black;
+}
+
+.silicon__p, .utn__p{
+    font-size: 1.5em;
+    margin: 0 20px; 
+    color: black;
+    line-height: 70px;
+}
+
+.silicon__contacto, .utn__contacto{
+
+  background:  #12b796d2 ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.silicon__container-group, .utn__container-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #12b79667;
+  height: 100%;
+}
+
+.silicon__contacto-wpp, .silicon__contacto-ig, .silicon__contacto-mail, .utn__contacto-wpp, .utn__contacto-ig, .utn__contacto-mail{
+  width: 40px;
+}
+
+.silicon__contacto-group, .utn__contacto-group{
+  display: flex;
+  align-items: center;
+}
+
+.silicon__contacto__primary, .utn__contacto__primary{
+  font-size: 2em;
+  color: black;
+}
+
+.silicon__contacto_map, .utn__contacto-map{
+  width: 500px;
+  height: 100%;
+}
+
+.silicon__contacto-redes, .utn__contacto-redes {
+  background-color: #009f8f;
+  padding: 30px 50px;
+  box-shadow: 10px 5px 5px #1e25249c;
+}
+.footer__container{
+  background-color: #4312B7;
+  width: 100%;
+  height: 100%;
+}
+.footer__title{
+  margin: 0;
+  font-size: 2.5em;
+  padding-top: 5px;
+  color: white;
+  letter-spacing: 5px;
+}
+.copy{
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+
+.copy__p{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: calc(10vh/2.2);
+  letter-spacing: 4.5px;
+}
+.footer__container-github , .footer__container-le{
+  width: 70px;
+  
+}
+
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__clase{
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #12b796d2;
+
+}
+.section__clase-art{
+   background-color: red;
+   border: 1px solid black;
+  text-align: center;
+  height: 50vh;
+  width: 25%;
+}
+.section__clase-art:hover{
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+  cursor:grabbing;
+}
+.section__clase-title, .section__clase-p{
+  color: black;
+}
+
+.art-git{
+  background-image: url(../imgs/git.jpg);
+}
+.art-html{
+  background-image: url(../imgs/html.png);
+}
+.art-css{
+  background-image: url(../imgs/css.png);
+}
+.art-html-css{
+  background-image: url(../imgs/html-css.jpg);
+}
+.art-flex-grid{
+  background-image: url(../imgs/flex-grid.jpg);
+}
+
+.art-form{
+  background-image: url(../imgs/form.jpg);
+}
+.art-rd{
+  background-image: url(../imgs/rd.webp);
+}
+
+.art-boot{
+  background-image: url(../imgs/boots.png);
+}
+.art-git, .art-html, .art-css, .art-html-css, .art-flex-grid, .art-form, .art-rd, .art-boot{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+}
+.section__clase-title{
+  font-size: 1.7em;
+}
+.section__clase-title, .section__clase-p{
+  background-color: #091a16d3;
+  color: white;
+}
+
+.section__presentacion{
+  text-align: center;
+}
+
+.footer-wave{
+  background-color: #12b796d2;
+}
+/*------------------------ BREAKPOINTS PARA INDEX.HTML ------------------------*/
+@media (max-width: 690px) {
+  .section__clase-art{
+   width: 45%;
+ }
+}
+@media (max-width: 628px) {
+    .header__container__img{
+      flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 489px) {
+  .section__clase-art{
+   width: 80%;
+ }
+ .header__container__img{
+  margin: 0 auto;
+}
+.header {
+  flex-wrap: wrap;
+}
+}
+
+/*------------------------ BREAKPOINTS PARA UTN.HTML Y SILICON.HTML------------------------*/
+
+@media (max-width: 782px) {
+  .utn__contacto, .silicon__contacto{
+    flex-wrap: wrap;
+  }
+  .utn__contacto-map, .silicon__contacto_map{
+    margin-top: 50px;
+    height: 70vh;
+    width: 90vw;
+    border-radius: 20px;
+  }
+  .utn__contacto-redes, .silicon__contacto-redes{
+    width: 60%;
+    border-radius: 20px;
+  }
+
+  .utn__contacto__primary, .silicon__contacto__primary{
+    text-align: center;
+  }
+
+  .utn__contacto-group , .silicon__contacto-group{
+    margin: 0 20%;
+  }
+
+  .silicon{
+    height: 130vh;
+  }
+}
+
+@media (max-width: 472px) {
+  .utn__title, .silion__title{
+    font-size: 2.7em;
+  }
+  .utn__p, .silicon__p{
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 380px) {
+  .utn__title, .silion__title{
+    font-size: 2.2em;
+  }
+  .utn__p, .silicon__p{
+    font-size: 1em;
+  }
+}
+@media (max-width: 370px) {
+  .utn__contacto-group, .silicon__contacto-group{
+    margin: 0;
+  }
+}
+
+@media (max-width: 322px) {
+  .utn__p, .silicon__p{
+    margin: 5px;
+  }
+}
+
+@media (max-width: 292px) {
+  .utn__title, .silion__title{
+    font-size: 1.9em;
+  }
+  .utn__p, .silicon__p{
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 406px) {
+  .silicon__contacto-group, .utn__contacto-group{
+    flex-direction: column;
+  }
+}
+/*------------------------ BREAKPOINTS PARA SILICON.HTML ------------------------*/
+
+@media (max-width: 558px) {
+  .silion__title{
+    font-size: 2.9em;
+  }
+}
+@media (max-width: 404px) {
+  .silion__title{
+    font-size: 2.4em;
+  }
+}
+@media (max-width: 406px) {
+  .silicon__contacto-group{
+    margin: 0;
+  }
+}
+
+.footer__container-github:hover, .footer__container-le:hover{
+  box-shadow: 1px 1px 1px black;
+}
